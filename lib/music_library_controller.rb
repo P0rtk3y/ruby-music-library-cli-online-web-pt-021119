@@ -84,7 +84,7 @@ class MusicLibraryController
       input = gets.strip.to_i
       
       if (1..Song.all.length).include?(input)
-        song = Song.all.sort_by(&:name).each_with_index do |song, index|
+        song = Song.all.sort_by(&:name)
           binding.pry
         end 
       end 
