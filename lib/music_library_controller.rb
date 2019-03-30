@@ -85,7 +85,8 @@ class MusicLibraryController
       
       if (1..Song.all.length).include?(input)
         song = Song.all.sort_by(&:name).each_with_index do |song, index|
-          
+          binding.pry
+        end 
       end 
               
     end 
